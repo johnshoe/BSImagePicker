@@ -144,6 +144,10 @@ public class ImageTileAdapter extends RecyclerView.Adapter<ImageTileAdapter.Base
         notifyDataSetChanged();
     }
 
+    public List<Uri> getImageList() {
+        return imageList;
+    }
+
     public void setCameraTileOnClickListener(View.OnClickListener cameraTileOnClickListener) {
         this.cameraTileOnClickListener = cameraTileOnClickListener;
     }
