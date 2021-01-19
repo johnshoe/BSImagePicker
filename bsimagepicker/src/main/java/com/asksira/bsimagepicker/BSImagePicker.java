@@ -587,6 +587,14 @@ public class BSImagePicker extends BottomSheetDialogFragment implements LoaderMa
         }
     }
 
+    public void setImageList(List<Uri> imageList) {
+        adapter.setImageList(imageList);
+    }
+
+    public List<Uri> getImageList() {
+        return adapter.getImageList();
+    }
+
     /**
      * Returns the TextView that appears when there is no item,
      * So that user can customize its styles, etc.
